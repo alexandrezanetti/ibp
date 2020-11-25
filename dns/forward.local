@@ -1,0 +1,12 @@
+$TTL	604800
+@	IN	SOA	master.ibp.poc. root.ibp.poc. (
+			     34		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	master.ibp.poc.
+master	IN	A	169.57.222.20
+*.cp	IN	A	169.57.222.20
+
