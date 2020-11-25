@@ -1,0 +1,22 @@
+apiVersion: ibp.com/v1beta1
+kind: IBPConsole
+metadata:
+  name: ibpconsole
+spec:
+  arch:
+  - amd64
+  license:
+    accept: true
+  serviceAccountName: default
+  email: "rseberin@br.ibm.com"
+  password: "160493"
+  registryURL: cp.icr.io/cp
+  imagePullSecrets:
+    - docker-key-secret
+  networkinfo:
+    domain: cp.ibp.poc
+  storage:
+    console:
+      class: managed-nfs-storage
+      size: 10Gi
+
